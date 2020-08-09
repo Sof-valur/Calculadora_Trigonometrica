@@ -78,7 +78,28 @@ public class JavaApplication1 {
                         break;
                 }
                 break;
-            
+            // Sinh, Cosh, Tanh //
+            case "c":
+                System.out.print("Digite a para Sinh, b para Cosh, o c para Tanh: ");
+                String election3 = in.nextLine();
+                switch (election3) {
+                    // Sinh //
+                    case "a":
+                        System.out.print("Inserte el número al que le desea aplicar el Sinh: ");
+                        System.out.println(Math.sinh(devolverNumber(getNumber(), enRadianes)));
+                        break;
+                    // Cosh //
+                    case "b":
+                        System.out.print("Inserte el número al que le desea aplicar el Cosh: ");
+                        System.out.println(Math.cosh(devolverNumber(getNumber(), enRadianes)));
+                        break;
+                    // Tanh //
+                    case "c":
+                        System.out.print("Inserte el número al que le desea aplicar el Tanh: ");
+                        System.out.println(Math.tanh(devolverNumber(getNumber(), enRadianes)));
+                        break;
+                }
+                break;
         }
     }
      private static double devolverNumber(int numero, boolean enRadianes) {
